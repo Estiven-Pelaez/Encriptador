@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador Alura</title>
+</head>
+<body>
+    <div class="container">
+       
+        <img class="logo" src="imagenes/alura.png" alt="">
+
+        <input type="text" id="textoEncriptado" placeholder="Ingrese texto">
+
+        <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
+
+        <button type="button" id="botonEncriptado">Encriptar</button>
+        <button type="button" id="botonDesencriptado">Desencriptar</button>
+        <button type="button" id="botonCopiar">Copiar</button>
+
+        
+        
+
+        <div class="right">
+        <img class="imagen" src="imagenes/Datos-encriptados.jpg" alt="">
+            <p class="texto1">Brian Estiven Maya Pelaez</p>
+        </div>
+        </div>
+    </div>
+
+   
+    
+    
+</body>
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+  
+</script>
+</html>
