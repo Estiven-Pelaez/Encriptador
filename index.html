@@ -6,42 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Encriptador Alura :)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/botones.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Encriptado</title>
 </head>
 <body>
-    <div class="container">
-       
-        <img class="logo" src="imagenes/alura.png" alt="">
-
-        <input type="text" id="textoEncriptado" placeholder="Ingrese texto">
-
-        <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
-
-        <button type="button" id="botonEncriptado">Encriptar</button>
-        <button type="button" id="botonDesencriptado">Desencriptar</button>
-        <button type="button" id="botonCopiar">Copiar</button>
-
-        
-        
-
-        <div class="right">
-        <img class="imagen" src="imagenes/Datos-encriptados.jpg" alt="">
-            <p class="texto1">Brian Estiven Maya Pelaez</p>
-        </div>
-        </div>
+    <header class="head">
+        <img class="head__logo" src="imagenes/alura.png" alt="">
+        <img class="head__alura" src="Imagenes/alura.imagen.avif" alt="">
+    </header>
+    <section class="banner">
+        <textarea class="texto__encriptado" id="textoEncriptado" placeholder="Ingrese texto"></textarea>
+        <textarea class="texto__desencriptado" id="textoDesencriptado" placeholder="Resultado" readonly></textarea>
+    </section>
+    <div class="boton">
+        <button class="boton__encriptador" type="button" id="botonEncriptado">Encriptar</button>
+        <button class="boton__copiar" type="button" id="botonCopiar">Copiar</button>
+        <button class="boton__desencriptador" type="button" id="botonDesencriptado">Desencriptar</button>
     </div>
-
-   
-    
-    
+    <footer class="footer">
+        <h2 class="footer__contacto">Contacto</h2>
+        <div class="iconos">
+            <li class="footer__link"><a href="mailto:grafflove2016@gmail.com" target="_blank"><img src="Imagenes/icons8-gmail-100.png" alt=""></a></li>
+            <li class="footer__link"><a href="https://www.linkedin.com/in/stiven-pelaez-9b3209248/" target="_blank"><img src="Imagenes/icons8-linkedin-100.png" alt=""></a></li>
+            <li class="footer__link"><a href="https://www.instagram.com/chelo_akowa/" target="_blank"><img src="Imagenes/icons8-instagram-100.png" alt=""></a></li>
+        </div>
+        <p class="nombre">Brian Stiven Maya Pelaez</p>
+    </footer>
 </body>
-<script>
-    var btn = document.querySelector("#botonEncriptado");
-    btn.onclick = encriptar;
-    var btn2 = document.querySelector("#botonDesencriptado");
-    btn2.onclick = desencriptar;
-    var btn3 = document.querySelector("#botonCopiar");
-    btn3.onclick = copiar;
-  
-</script>
+    <script>
+        var btn = document.querySelector("#botonEncriptado");
+        btn.onclick = encriptar;
+        var btn2 = document.querySelector("#botonDesencriptado");
+        btn2.onclick = desencriptar;
+        var btn3 = document.querySelector("#botonCopiar");
+        btn3.onclick = copiar;
+    </script>
 </html>
