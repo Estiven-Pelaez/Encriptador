@@ -1,94 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    margin: 0px;
-    padding: 0%;
-    background-color: azure;
+    font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+    background-image: url(/Encriptador-Aluara.github.io/imagenes/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.logo {
-    width: 5%;
-    float: left;
-    background: #E0FFFF;
-    border-radius: 30%;
-    margin-left: 1%;
-    margin-top: 1%;
+.headLogo {
+    width: 35px;
+    display: flex;
+    margin:  auto;
+    padding-top: 5px;
 }
 
-#textoEncriptado {
-    width: 500px;
+section {
     height: 400px;
-    margin-right: 48%;
-    margin-top: 7%;
-    background-color: azure;
-    float: inline-end;
-    border: 0;
-    border-radius: 3%;
+    padding: 5%;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+}
+.banner textarea{
+    background-color: rgba(252, 252, 251,.4);
+    box-shadow: -2px 3px 2px  rgba(229, 0, 255, 0.5);
+    resize: none;
+    width: 350px;
+    height: 250px;
+    margin: 30px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 1.2rem;
+    font-weight:200;
 }
 
-::placeholder {
-    float:left;
-    color: grey;
+.boton {
+    display: flex;
+    justify-content:space-around;
+    width: 40%;
+    height: 50px;
+    margin-left: 31%;
+}
+.boton__encriptador {
+    height: 2.5rem;
+    width: 7rem;
+    border: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    background-color: rgba(255, 166, 0, 1);
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    color: rgb(56, 56, 56);
+    font-size: 1.2rem;
+    font-weight:300;
+    cursor: pointer;
+}
+.boton__copiar {
+    height: 2.5rem;
+    width: 7rem;
+    border: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    background-color: rgba(255, 166, 0, 1);
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    color: rgb(56, 56, 56);
+    font-size: 1.2rem;
+    font-weight:300;
+    cursor: pointer;
+}
+.boton__desencriptador {
+    height: 2.5rem;
+    width: 7rem;
+    border: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    background-color: rgba(255, 166, 0, 1);
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    color: rgb(56, 56, 56);
+    font-size: 1.2rem;
+    font-weight:300;
+    cursor: pointer;
+}
+.boton__encriptador:hover {
+    color: gold;
+    background-color: black;    
+}
+.boton__desencriptador:hover {
+    color: gold;
+    background-color: black;    
+}
+.boton__copiar:hover {
+    color: gold;
+    background-color: black;    
 }
 
-.imagen {
-    width: 100%;
-    float: right;
-    margin-right: -100%;
-    margin-top: -140%;
-    border-radius: 5%;
+footer {
+    margin-top: 7rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight:300;
+    text-align: center;
 }
-
-#textoDesencriptado {
-    width: 400px;
-    height: 300px;
-    float: right;
-    margin-top: -12%;
-    margin-right: 5%;
-    border: 0;
-}
-
-#botonCopiar {
-    display: none;
-    width: 5%;
-    height: 25%;
-    border-radius: 10%;
-    background-color: aquamarine;
-    border: 0;
-    margin: 60px;
-}
-
-#botonEncriptado {
-    width: 10%;
-    height: 25%;
-    border-radius: 9%;
-    background-color: aquamarine;
-    float: left;
-    margin: 60px;
-    margin-left: 8%;
-    border: 0;
-    scale: 2;
-}
-#botonDesencriptado {
-    width: 10%;
-    height: 25%;
-    border-radius: 9%;
-    background-color: rgb(127, 170, 156);
-    float: left;
-    margin: 60px;
-    margin-left: 10%;
-    border: 0;
-    scale: 2;
-}
- 
-.right {
-    float: right;
-    width: 30%;
-    margin-top: -3%;
-    border-radius: 24px;
-    background-color: azure;
-}
-
-.texto1 {
-    color: rgb(0, 0, 214); 
-    
-}
-
